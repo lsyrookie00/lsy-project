@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>leesungyun</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pretendard', sans-serif;
+}
+
+body {
+    background: #0a0d14;
+    color: #e6eaf2;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 30px 30px;
+    z-index: -1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.header h1 {
+    font-size: 56px;
+    font-weight: 800;
+}
+
+.header p {
+    color: #8b93a7;
+    margin-top: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.card {
+    background: rgba(20,25,40,0.6);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 20px;
+    padding: 25px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0,255,200,0.15);
+}
+
+.small {
+    font-size: 14px;
+    color: #9aa3b2;
+}
+
+.status {
+    color: #00ffa6;
+    font-weight: bold;
+}.tech span {
+    display: inline-block;
+    background: rgba(255,255,255,0.08);
+    padding: 6px 12px;
+    border-radius: 999px;
+    margin: 5px;
+    font-size: 13px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 14px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.08);
+    text-decoration: none;
+    color: white;
+    margin-right: 8px;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: rgba(0,255,200,0.2);
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>이성윤</h1>
+        <p>이성윤 Developer</p>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <h2>추후 추가예정.</h2>
+            <p class="small">
+                아이디어를 실제 서비스로 구현하는 것을 좋아합니다.
+                다양한 프로젝트와 시스템 개발에 관심이 있습니다.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="small">STATUS</div>
+            <div class="status">● Available</div>
+        </div>
+
+        <div class="card">
+            <div class="small">TECHNOLOGIES</div>
+            <div class="tech">
+                <span>Java</span>
+                <span>JavaScript</span>
+                <span>Node.js</span>
+                <span>Roblox Lua</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="small">BIRTH</div>
+            <div>2014.08.05</div><br>
+
+            <div class="small">LOCATION</div>
+            <div>충청남도 천안시</div>
+        </div>
+
+        <div class="card">
+            <div class="small">CONTACT</div>
+            <div>lsyrookie00@naver.com</div>
+
+            <a href="https://discord.com/channels/@me/1414176706377552033" class="btn">Discord</a>
+            <a href="https://open.spotify.com/playlist/5Su10zVGDBVKNxl2M2w6lX?si=787c9460953f4321" class="btn">Spotify</a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
